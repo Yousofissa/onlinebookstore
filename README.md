@@ -47,7 +47,7 @@ online-bookstore
 │   │
 │   ├── data/
 │   │   └── books.js
-│   │200200
+│   │
 │   ├── images/
 │   │   ├── bookshop.jpg
 │   │   ├── harrypotter.jpg

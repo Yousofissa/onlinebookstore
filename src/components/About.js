@@ -5,7 +5,7 @@ function About() {
     <section className="page">
       <h2>About Us</h2>
       <p>
-        OnlineBookstore is a simple  project built with ReactJS to show
+        OnlineBookstore is a simple project built with ReactJS to show
         responsive web design and basic UI/UX concepts.
       </p>
       <p>
