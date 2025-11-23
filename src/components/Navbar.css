@@ -1,0 +1,12 @@
+.navbar {
+  background: #20232a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.navbar-links a {
+  margin-left: 15px;
+  color: white;
+}
