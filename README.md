@@ -1,37 +1,116 @@
-# Online Bookstore – React Web Application
+📚 Online Bookstore – Full Stack Web Application
 
-This project is a simple online bookstore built using React.js. It allows users to browse books, search by title, view details, and add books to a shopping cart. The project demonstrates core React concepts including components, props, routing, state management, and reusable UI structure.
+This project is a full-stack online bookstore built with React.js, Node.js, Express, and MySQL.
+It allows users to browse books, search by title, view details, manage a shopping cart, authenticate securely, and place orders that are saved in a database.
 
----
-
-## Features
-
-- Home page with hero section
-- Books page with responsive grid layout
-- Live search bar to filter books
-- Book details page
-- Add to cart, remove from cart, and clear cart
-- About and Contact pages
-- Responsive navbar and footer
-- Simple and clean UI
+The project demonstrates modern frontend development, backend API design, JWT authentication, and database integration.
 
 ---
 
-## Technologies Used
+🚀 Features
 
-- React.js
-- React Router
-- JavaScript
-- Node.js & npm
-- Git & GitHub
+🔐 Authentication
+
+-User Signup & Login
+
+-Gmail-only authentication (@gmail.com)
+
+-Password hashing using bcrypt
+
+-Secure JWT-based authentication
+
+-Protected routes (orders require login)
+
+📖 Bookstore Functionality
+
+-Home page with hero section
+
+-Books page with responsive grid layout
+
+-Live search bar to filter books
+
+-Book details page
+
+-Add to cart / remove from cart
+
+-Cart total calculation
+
+-Place order (saved in database)
+
+🛒 Orders
+
+-Orders linked to logged-in users
+
+-Orders stored in MySQL
+
+-Order items saved per order
+
+-Secure backend order creation
+
+🎨 UI
+
+-Clean, modern cart layout
+
+-Styled buttons (Remove, Place Order, Logout)
+
+-Responsive navbar and footer
+
+-Simple and user-friendly design
+
+---
+
+🛠 Technologies Used
+
+-Frontend
+
+-React.js
+
+-React Router
+
+-JavaScript (ES6)
+
+-HTML & CSS
+
+Backend
+
+-Node.js
+
+-Express.js
+
+-MySQL
+
+-JWT (JSON Web Tokens)
+
+-bcrypt.js
+
+Tools
+
+-npm
+
+-Git & GitHub
+
+-phpMyAdmin / MySQL Workbench
 
 ---
 
 ## Project Structure
 online-bookstore
 │
-├── src/
-│   ├── components/
+├── backend
+│   ├── controllers
+│   │   ├── authController.js
+│   │   └── orderController.js
+│   ├── middleware
+│   │   └── authMiddleware.js
+│   ├── models
+│   │   └── db.js
+│   ├── routes
+│   │   ├── auth.js
+│   │   └── orders.js
+│   └── server.js
+│
+├── src
+│   ├── components
 │   │   ├── About.js
 │   │   ├── BookCard.js
 │   │   ├── BookDetails.js
@@ -39,31 +118,27 @@ online-bookstore
 │   │   ├── Cart.js
 │   │   ├── Contact.js
 │   │   ├── Footer.js
-│   │   ├── Home.css
 │   │   ├── Home.js
-│   │   ├── Navbar.css
 │   │   ├── Navbar.js
-│   │   ├── SearchBar.js
-│   │
-│   ├── data/
+│   │   └── SearchBar.js
+│   ├── data
 │   │   └── books.js
-│   │
-│   ├── images/
+│   ├── images
 │   │   ├── bookshop.jpg
 │   │   ├── harrypotter.jpg
 │   │   ├── home.jpg
-│   │   ├── index.js
 │   │   ├── littlewomen.jpg
 │   │   ├── mockingbird.jpg
 │   │   └── the-great-gatsby.jpg
-│
 │   ├── App.css
 │   ├── App.js
 │   ├── index.css
-│   ├── index.js
-│   └────
+│   └── index.js
 │
-└────
+├── onlinebookstore.sql
+└── README.md
+
+
 
 ##  Screenshots
 
