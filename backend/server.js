@@ -9,7 +9,6 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/orders", orderRoutes);
 
-// TEST DB
 app.get("/test-db", (req, res) => {
   db.query("SHOW TABLES", (err, results) => {
     if (err) return res.status(500).json(err);

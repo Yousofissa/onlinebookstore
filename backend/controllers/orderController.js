@@ -13,7 +13,6 @@ exports.createOrder = (req, res) => {
     0
   );
 
-  // 1️⃣ Insert into orders
   db.query(
     "INSERT INTO orders (user_id, total) VALUES (?, ?)",
     [userId, total],
@@ -25,7 +24,6 @@ exports.createOrder = (req, res) => {
 
       const orderId = result.insertId;
 
-      // 2️⃣ Insert order items (MATCHING TABLE)
       const values = cartItems.map(item => [
         orderId,
         item.title,

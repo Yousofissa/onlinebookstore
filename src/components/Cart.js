@@ -4,7 +4,7 @@ function Cart({ cartItems, removeFromCart, clearCart }) {
   const total = cartItems.reduce((sum, item) => sum + Number(item.price), 0);
 
   const handleCheckout = async () => {
-    // 🔍 DEBUG LOGS (IMPORTANT)
+    
     console.log("CHECKOUT CLICKED");
     console.log("CART ITEMS:", cartItems);
     console.log("TOKEN:", localStorage.getItem("token"));

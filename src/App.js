@@ -14,10 +14,9 @@ import Auth from "./Auth";
 
 
 function App() {
-  // 🔐 AUTH CHECK
+  
   const token = localStorage.getItem("token");
 
-  // 🛒 CART STATE
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (book) => {
@@ -36,7 +35,7 @@ if (!token) {
   return <Auth />;
 }
 
-  // ✅ LOGGED IN → SHOW FULL APP
+
   return (
     <Router>
       <div className="app">
